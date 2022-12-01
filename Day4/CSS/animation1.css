@@ -1,0 +1,46 @@
+
+div{
+    background-color: aquamarine;
+height: 200px;
+width: 200px;
+padding: 10px;
+margin: 10px;
+}
+.c2{
+    opacity: 50%;
+    transition: opacity 0.5s;
+    background-color: yellow;
+    transition: backgroud-color 1.0s;
+}
+.c2:hover{
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+.c1{
+    border-radius: 4px;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+.c1:hover{
+    border-radius: 8px;
+    font-size: 60px;
+}
+tr:nth-child(even){
+    border: dashed;
+    background-color: brown;
+}
+p:not(.p1){
+    background-color: cadetblue;
+}
+.b1:not(:disabled){
+    background-color: orange;
+    border-color: 3px solid green;
+}
+p{
+    text-align: center;
+    text-shadow: 4px 2px 4px violet, -4px -2px 4px yellow;
+    font-size: 20px;
+    font-family: 'courier New', Courier, monospace;
+    background-color: rgb(230, 217, 217);
+    margin: 100px;
+}
