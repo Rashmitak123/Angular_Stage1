@@ -1,0 +1,17 @@
+html, body {
+  margin: 5px;
+  border: 3px solid blue;
+  background-color: burlywood;
+}
+
+p {
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px papayawhip;
+}
+
+a {
+  color: purple;
+}
+
+/*# sourceMappingURL=extrastyle.css.map */

@@ -1,0 +1,70 @@
+$favColor: red;
+$size: 20;
+
+body{
+    background-color: burlywood;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+h1{
+    background-color: if(2+2=5,pink,black);
+}
+
+h2{
+    @if 1+1==3 {border:1px dashed red;}
+    @if 3>2 {border:3px solid salmon;}
+    @if null {border:4px double blue;}
+}
+
+h3{
+    padding: 10px 12px;
+    margin: 1px;
+    background-color: $favColor;
+}
+
+.p1{
+@if $size > 40{
+    color: brown;
+    font-size: 1rem;
+}
+@else if $size >= 20{
+    color: greenyellow;
+    font-size: 3rem;
+}
+text-shadow: 2px 2px 5px black;
+text-align: center;
+}
+
+$roseColor: if(true, green, blue);
+$jasmineColor: if(false, papayawhip, darksalmon);
+$lotusColor: if(6>3, purple, aqua);
+p:nth-of-type(1){
+    background-color: $roseColor;
+    @if(lightness($roseColor) > 50%){
+         border:1px solid blue;
+    }
+    @else{
+
+        border:2px dashed deeppink;
+    }
+    
+}
+
+p:nth-of-type(2){
+ @if 2+2==4 {background-color: $jasmineColor;}   
+ @if 6 >5 {border: 1px dotted $lotusColor;}
+ @if true{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+ text-align: center;
+}
+
+p:nth-of-type(3){
+    @if 2+2==5 {background-color: $jasmineColor;}   
+    @if 6+4==10 {border: 1px dotted $lotusColor; text-shadow: 2px 2px 4px blue;}
+    @if true{font-family: 'Times New Roman', Times, serif;}
+   }
+   p:nth-of-type(4){
+    @if 2+2==4 {background-color: $lotusColor;}   
+    @if 6 >5 {border: 1px dotted $jasmineColor; font-family: 'Times New Roman', Times, serif;}
+    text-align: center;
+   }
