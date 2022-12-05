@@ -1,0 +1,27 @@
+
+@mixin heading{
+    $w: 100px;
+    $h: 100px;
+}
+
+@mixin moving{
+    left: 0px;
+    top: 0px;
+    color: blue;
+
+}
+h1{
+    @include heading;
+    position: relative;
+    animation-name: anmtn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes anmtn{
+    
+    0%{
+        @include moving;
+    }
+    25%{left: 200px; top: 0px; color: pink;}
+   
+}

@@ -1,0 +1,28 @@
+.logo {
+  width: 1250px;
+  height: 500px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: burlywood;
+  }
+  .logo {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    opacity: 0.8;
+    border-radius: 50%;
+  }
+  .logo:hover {
+    opacity: 1;
+  }
+  h1 {
+    color: lavender;
+    font-size: 24px;
+    background-color: black;
+    font-family: cursive;
+  }
+}
+
+/*# sourceMappingURL=mediademo.css.map */

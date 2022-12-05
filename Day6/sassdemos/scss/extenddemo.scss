@@ -1,0 +1,25 @@
+.c1{
+    color: chartreuse;
+    border: 1px solid black;
+}
+
+.c2{
+    @extend .c1;
+    background-color: red;
+}
+
+.c3{
+    font-size: 36px;
+    color: blueviolet;
+}
+
+p{
+    font-size: 24px;
+    @media (max-width: 600px){
+        font-size: 36px;
+        color: blue;
+    }
+    @media screen and (orientation: landscape){
+        margin-left: 30px;        
+    }
+}

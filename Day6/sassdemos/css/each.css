@@ -1,0 +1,73 @@
+.c_gray {
+  background-color: gray;
+}
+
+.c_brown {
+  background-color: brown;
+}
+
+.c_plum {
+  background-color: plum;
+}
+
+.c_pink {
+  background-color: pink;
+}
+
+.c_gray {
+  background-color: gray;
+  color: black;
+  font-family: Times New Roman;
+}
+
+.c_brown {
+  background-color: brown;
+  color: yellow;
+  font-family: Courier New;
+}
+
+.c_plum {
+  background-color: plum;
+  color: blue;
+  font-family: Georgia;
+}
+
+.c_pink {
+  background-color: pink;
+  color: green;
+  font-family: monospace;
+}
+
+h1 {
+  border: 0.5rem dotted pink;
+  text-align: center;
+  box-shadow: 2px 4px 6px gray inset;
+  color: antiquewhite;
+  text-shadow: 2px 2px 4px black;
+}
+
+h4 {
+  border: 1px solid red;
+  text-align: center;
+  box-shadow: 2px 4px 6px gray inset;
+  color: antiquewhite;
+  text-shadow: 2px 2px 4px black;
+}
+
+h2 {
+  border: 2px dashed green;
+  text-align: center;
+  box-shadow: 2px 4px 6px gray inset;
+  color: antiquewhite;
+  text-shadow: 2px 2px 4px black;
+}
+
+h3 {
+  border: 0.5rem double black;
+  text-align: center;
+  box-shadow: 2px 4px 6px gray inset;
+  color: antiquewhite;
+  text-shadow: 2px 2px 4px black;
+}
+
+/*# sourceMappingURL=each.css.map */

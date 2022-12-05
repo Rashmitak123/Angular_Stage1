@@ -1,0 +1,30 @@
+$mediacolor: lavender;
+$mediafontsize: 24px;
+
+
+.logo{
+    width: 1250px;
+    height: 500px;
+}
+
+@media(max-width: 600px){
+    body{
+        background-color: burlywood;
+    }
+    .logo{
+        width: 300px;
+        height: 300px;
+        margin: 50px;
+        opacity: 0.80;
+        border-radius: 50%;
+    }
+    .logo:hover{
+        opacity: 1.0;
+    }
+    h1{
+        color: $mediacolor;
+        font-size: $mediafontsize;
+        background-color: black;
+        font-family: cursive;
+    }
+}

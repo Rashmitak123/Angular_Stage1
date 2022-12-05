@@ -1,0 +1,33 @@
+@each $color in gray, brown, plum, pink{
+    .c_#{$color}{
+        background-color: $color;
+    }
+}
+
+@each $color, $textcolor, $fontfamily in 
+    (gray,black, Times New Roman), 
+    (brown,yellow, Courier New), 
+    (plum, blue, Georgia), 
+    (pink, green, monospace){
+        .c_#{$color}{
+            background-color: $color;
+            color: $textcolor;
+            font-family: $fontfamily;
+    }
+}
+
+@each $headings, $border in(
+    h1:0.5rem dotted pink,
+    h4:1px solid red,
+    h2:2px dashed green,
+    h3:0.5rem double black
+   
+){
+    #{$headings}{
+        border: $border;
+        text-align: center;
+        box-shadow: 2px 4px 6px gray inset;
+        color: antiquewhite;
+        text-shadow: 2px 2px 4px black;
+    }
+}
