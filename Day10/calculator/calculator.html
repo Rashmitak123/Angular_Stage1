@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <table id="calcu">
+        <tr>
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td>
+                <input type="button" value="c" onclic="clr()"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="func('1')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="2" onclick="func('2')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="3" onclick="func('3')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="/" onclick="func('/')" onkeydown="myFunction(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" onclick="func('4')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="5" onclick="func('5')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="6" onclick="func('6')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="*" onclick="func('*')" onkeydown="myFunction(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="func('7')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="8" onclick="func('8')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="9" onclick="func('9')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="-" onclick="func('-')" onkeydown="myFunction(event)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="0" onclick="func('0')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="." onclick="func('.')" onkeydown="myFunction(event)">
+            </td>
+            <td>
+                <input type="button" value="=" onclick="solve()">
+            </td>
+            <td>
+                <input type="button" value="+" onclick="func('+')" onkeydown="myFunction(event)">
+            </td>
+        </tr>
+    </table>
+    <script src="calculator.js"></script>
+</body>
+</html>
