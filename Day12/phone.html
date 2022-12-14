@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+</head>
+<body>
+    <input onkeydown="return phone(event.key)" id="phone" type="telephone">
+    <script>
+        function phone(key){
+            return (key>='0' && key<='9') || ['+','(',')','-','/'].includes(key);
+        }
+    </script> 
+</body>
+</html>

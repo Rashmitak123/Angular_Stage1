@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+        <meta charset="UTF-8">    
+        <title>Template</title>
+    </head>
+    <style> 
+        body{
+            background-color: chocolate;
+        }
+        .flexbox{
+            display: flex;
+            margin: 50px;
+        }
+        .flexbox div{
+            flex: 33%;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 5px 10px ;
+            border: 1px solid black;
+        }
+        .temp2{
+            background-color: aqua;
+        }
+        #temp4{
+            margin: 50px;
+            text-align: center;
+            background-color: cadetblue;
+            border: 1px solid black;
+            border-radius: 20%;
+            box-shadow: 5px 10px ;
+        }
+        .temp1, .temp3{
+            border-radius: 20%;
+            background-color: cadetblue;
+        }
+       
+    </style>
+    <body>
+        <div class="flexbox">
+            <div class="temp1">
+                <template id="mytemplate1"></template>
+                <my-template1></my-template1>    
+            </div>    
+            <div class="temp2">
+                <h1>Header</h1>    
+            </div>    
+            <div class="temp3">
+                <template id="mytemplate2"></template>
+                <my-template2></my-template2>    
+            </div>
+        </div>
+        <div id="temp4">
+            <template id="mytemplate3"></template>
+            <my-template3></my-template3>
+        </div>
+    </body>
+    <script src="template3Ass.js"></script>
+</html>
